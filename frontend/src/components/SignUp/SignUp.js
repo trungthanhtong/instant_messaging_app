@@ -85,7 +85,8 @@ export default function SignUp(props) {
         if (valid) {
             values.email = values.email.toLowerCase();
             closeRef.current.click();
-            dispatch(createUser(values))
+            dispatch(createUser(values, props.goBack))
+
         }
     };
 

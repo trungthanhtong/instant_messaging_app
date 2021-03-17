@@ -10,7 +10,7 @@ export const setUser = (userInfo) => ({
     userInfo,
 });
 
-export const createUser = (user) => {
+export const createUser = (user, redirect) => {
     return async (dispatch) => {
         try {
             const { status, data } = await userService.createUser(user);
@@ -18,6 +18,8 @@ export const createUser = (user) => {
                 const { token, userInfo } = data;
                 setCookie(token);
                 dispatch(setUser(userInfo));
+                redirect()
+
             }
         } catch (err) {
             Swal.fire({

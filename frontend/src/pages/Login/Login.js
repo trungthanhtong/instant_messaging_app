@@ -11,8 +11,6 @@ import { logIn } from "../../redux/actions/UserActions";
 export default function Login(props) {
     const dispatch = useDispatch();
 
-    const history = useHistory()
-
     let [state, setState] = useState({
         values: {
             email: "",
@@ -73,6 +71,7 @@ export default function Login(props) {
     };
 
     const goBack = () => {
+        console.log('redirect')
         props.history.push("/home");
     };
 
