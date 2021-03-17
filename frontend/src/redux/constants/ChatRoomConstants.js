@@ -1,0 +1,1 @@
+export const SET_CHAT_ROOM = 'SET_CHAT_ROOM';

@@ -1,0 +1,47 @@
+.background {
+    background-color: rgb(70, 70, 70);
+    min-height: calc(100vh - 60px);
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.formGroup input{
+    margin-bottom: 15px;
+}
+
+.modalFooter{
+    padding: 10px 0 40px;
+    text-align: center;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputBox input {
+    width: 100%;
+    border-color: red;
+}
+
+.inputBox i {
+    display: inline !important;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: red;
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+

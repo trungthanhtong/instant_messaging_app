@@ -1,0 +1,172 @@
+#roomList, #roomListItem {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#roomList {
+    position: relative;
+}
+
+#roomListItem {
+    height: calc(100vh - 105px);
+    overflow: scroll;
+}
+
+.input-group .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.input-group button:focus {
+    box-shadow: none !important;
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.nav-link.roomListItem {
+    display: block;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.options button {
+    margin-left: auto;
+}
+
+.options .infoButton {
+    margin-right: 10px;
+}
+
+.options button i {
+    font-size: 25px;
+}
+
+.options button:focus {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+.options button:hover {
+    /* background-color: transparent; */
+    /* color: black; */
+}
+
+.roomInfo {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background-color: white;
+    color: black;
+    z-index: 1;
+}
+
+.infoButton {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.infoButton:focus {
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.roomInfo .userList {
+    overflow: scroll;
+}
+
+.roomInfo::before{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    right: 17px;
+    top: -20px;
+}
+
+.roomInfo button {
+    color: red;
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: start;
+    padding: 10px
+}
+
+.roomInfo p {
+    padding: 0 10px;
+}
+
+.roomInfo button:hover{
+    background-color: gray;
+}
+
+.roomInfo button:focus {
+    border: none;
+    outline: none;
+}
+
+.userInfo {
+    padding: 10px;
+    text-align: start;
+}
+
+.userInfo:hover {
+    background: gray;
+    color: white;
+}
+
+.toggle {
+    display: none;
+}
+
+.modal-body {
+
+}
+
+@media screen and (max-width: 768px) {
+    #roomList {
+        position: absolute;
+        z-index: 1;
+    }
+    #roomListItem {
+        width: 300px !important;
+        position: absolute;
+        transform: translateX(-300px);
+        transition: all 0.3s;
+    }
+    
+    .toggle {
+        width: 20px;
+        height: 50px;
+        position: absolute;
+        background-color: rgba(110, 117, 124, 0.274);
+        left: 300px;
+        top: 90px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        transform: translateX(-300px);
+        color: white;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .modal-backdrop {
+        z-index: 0 !important;
+    }
+}
+
