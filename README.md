@@ -1,4 +1,4 @@
-## Instant Messaging App
+# Instant Messaging App
 
 The app allows users to send and receive messages in realtime without refresing with high level of security.
 
@@ -10,17 +10,17 @@ The app allows users to send and receive messages in realtime without refresing 
 5. Send a direct message to other users
 6. Responsive design.
 
-Install dependencies, run the command in both frontend and backend directories:
+### Install dependencies, run the command in both frontend and backend directories:
 ```
 $ npm install
 ```
 
-To start server, run the command in the backend directory
+### To start server, run the command in the backend directory
 ```
 $ nodemon server.js
 ```
 
-To start the front-end, run the command in the frontend directory
+### To start the front-end, run the command in the frontend directory
 ```
 $ npm start
 ```
