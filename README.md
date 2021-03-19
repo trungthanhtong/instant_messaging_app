@@ -9,3 +9,18 @@ Some Features:
 4. Send/Receive messages in a group
 5. Send a direct message to other users
 6. Responsive design.
+
+Install dependencies, run the command in both frontend and backend directories:
+```
+$ npm install
+```
+
+To start server, run the command in the backend directory
+```
+$ nodemon server.js
+```
+
+To start the front-end, run the command in the frontend directory
+```
+$ npm start
+```
