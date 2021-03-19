@@ -1,4 +1,4 @@
-Instant Messaging App
+##Instant Messaging App
 
 The app allows users to send and receive messages in realtime without refresing with high level of security.
 
