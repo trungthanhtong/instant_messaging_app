@@ -1,8 +1,8 @@
-##Instant Messaging App
+## Instant Messaging App
 
 The app allows users to send and receive messages in realtime without refresing with high level of security.
 
-Some Features:
+**Some Features:**
 1. Sign up/Sign in/Sign out
 2. Input validation as typing
 3. Create/Join a chat room. Leave a chat room
